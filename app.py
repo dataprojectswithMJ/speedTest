@@ -16,12 +16,12 @@ st.markdown('-----')
 
 # @st.cache
 def speed():
-    return int(round(pyspeedtest.SpeedTest(host='c.speedtest.net').ping(), 2))
+    return int(round(pyspeedtest.SpeedTest(host='www.google.com').ping(), 2))
 
 
 # @st.cache
 def npc_speed():
-    return random.randint(50, 99)
+    return random.randint(10, 71)
 
 
 player_speed = speed()
@@ -43,7 +43,7 @@ if testBtn:
         st.metric('Latency', f'{player_speed}ms')
 
     with col2:
-        st.subheader('Opponent network strength')
+        st.subheader('AI network strength')
         st.metric('Latency', f'{npc}ms')
 
     if player_speed >= 100:
