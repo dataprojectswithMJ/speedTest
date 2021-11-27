@@ -16,7 +16,7 @@ st.markdown('-----')
 
 # @st.cache
 def speed():
-    return int(round(pyspeedtest.SpeedTest(host='www.google.com').ping(), 2))
+    return int(round(pyspeedtest.SpeedTest(host='c.speedtest.net').ping(), 2))
 
 
 # @st.cache
