@@ -1,0 +1,2 @@
+pyspeedtest==1.2.7
+streamlit==1.1.0
