@@ -20,7 +20,7 @@ def speed():
 
 
 def npc_speed():
-    return random.randint(50, 99)
+    return random.randint(30)
 
 
 player_speed = speed()
